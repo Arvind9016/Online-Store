@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Ramesh Shop</title>
+      <link rel="stylesheet" href="./Store.css">
+      
+      
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+ 
+  <!-- Font a --><!-- wesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
+ <!-- Swiper Links -->
+ <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<!--<style>
+<!-- Mobile Responsive
+@media (max-width:769px){
+  .grid-1{
+    padding: 0 0;
+   margin-bottom:50px;
+  }
+  .grid-1 {
+    
+  }
+  
+  .grid-2 img{
+    margin-top: 0px; 
+  }
+  .grid-2{
+    
+  }
+  .grid-container{
+   padding-top: 200px;
+   
+  }
+  
+}
+Ends
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  .grid-container{
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: grey;
+    
+  }
+  nav{
+  margin-bottom: 0px;
+  }
+  .grid-1 {
+   
+    color:white;
+    
+    height: 150px;
+  }
+  .grid-1 p{
+    line-height: ;
+    width: 100%;
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-1 h5{
+    line-height: 1;
+    display: flex;
+    flex-grow:1;
+  }
+  .grid-1 span{
+    font-size: 2rem;
+    display: block;
+    
+  }
+  .grid-2{
+    background-color:;
+    height: 150px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .grid-2 img{
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    transition: 500ms;
+    margin-top: 100px;
+  }
+  .grid-2 img:hover{
+    transform: scale(1.05);
+  }
+  .creater-img{
+    transition:2s;
+    
+  }
+#facility{
+  margin-top: 100px;
+  padding:20px;
+}
+#facility p{
+  color:;
+}
+
+  .creater-img:hover{
+    border-bottom: 5px solid red;
+    border-right: 5px solid green;
+    border-top:5px solid red;
+    border-left: 5px solid green;
+    box-shadow: 0px 0px 10px;
+    border-radius: 50%;
+    transform: translateY(10px)}
+    
+    
+    Desktop Responsive
+  @media (min-width:769px){
+    .grid-1{
+     
+    }
+    .grid-1 p{
+      font-size: 2rem;
+      z-index: 2;
+    }
+    .grid-1 span{
+      font-size: 4.5rem;
+    }
+    .grid-2{
+      flex-shrink: 1;
+      padding: 0px 35px;
+    }
+    .grid-2 img{
+      height: 550px;
+      width: 100%;
+      position: relative;
+      z-index: 5;
+      
+    }
+    .grid-container{
+      display:flex;
+    flex-direction: columns;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    }
+    #facility div{
+      padding:0 20px;
+    }
+    .btn-warning {
+      font-size: 2rem;
+    }
+  }
+  Ends
+</style> */
+<!--  -->
+<body>
+
+ <h2 class="">STORE</h2>
+   <section class="home" id="home">
+   <nav> 
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#deal">Featured Products</a></li>
+                <li><a href="#letest-products">Letest Products</a></li>
+                <li><a href="#review">Reviews</a></li>
+            </ul>
+        
+        </nav>
+ <div class="top-icon">
+ <div class="top-icons">
+     <i class="far fa-user"></i>
+     <button class="cart-container"><i class="fas fa-shopping-cart"></i></button>
+     <button class="nav_toggler"><i class="fas fa-bars"></i></button>
+     </div>
+  
+ </div>
+ <div class="home-banner">
+   <div class="box-container">
+     <div class="content">
+       <h1>Upto 50% Off</h1>
+       <p>Take The Advantage Of Deals Of The Day.</p>
+     </div>
+     <div class="box">
+       <img src="images/fashion.jpeg" alt="" />
+     </div>
+   </div>
+ </div>
+ </section>
+    
+    <!--Swiper-->
+<div class="swiper " id="swiper">
+  <div class="swiper-wrapper" id="swiper-wrapper">
+    <div class="swiper-slide" id="swiper-slide">
+      <div class="content">
+      <h2>50% Off For Adult Today Let's Shop Something.</h2>
+      </div>
+      <div class="image">
+        <img src="images/fashion-1.jpeg" alt="" />
+      </div>
+    </div>
+    <div class="swiper-slide" id="swiper-slide">
+      <div class="content">
+      <h2>70% Off For Women Today Let's Shop Something.</h2>
+      </div>
+      <div class="image">
+        <img src="images/fashion-3.jpeg" alt="" />
+      </div>
+    </div>
+    <div class="swiper-slide" id="swiper-slide">
+      <div class="content">
+      <h2>80% Off For Children Today Let's Shop Something.</h2>
+      </div>
+      <div class="image">
+        <img src="images/fashion-2.jpeg" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+
+
+<!--Discount Banner-->
+<div class=" swiper banner-container">
+<div class="swiper-wrapper banner mt-5 mb-5">
+  <div class="swiper-slide" id="banner">
+  <img src="images/banner.jpeg" alt="" />
+  <p>Special Day For Womens. <span>80% Off</span></p>
+  </div>
+<div class="swiper-slide banner mt-5 bg-dark" id="banner">
+  <img src="images/boy banner.jpeg" class="boy-banner" alt="" />
+  <p class="text-light">Special Discounts On Boys. <span>80% Off</span></p>
+  
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+
+
+<section class="letest_products" id="letest-products">
+  <h2>Letest <span>Products</span></h2>
+  <div class="options">
+    <span class=" opt all active">All</span>
+    <span class="opt opt-jeans">Jeans</span>
+    <span class="opt opt-T-Shirts">T-Shirts</span>
+    <span class="opt opt-Shirts">Shirts</span>
+  </div>
+  <div class="box-container">
+    <div class="box jeans">
+      <img class="letest-img card-img-top" src="images/img-1.jpeg" alt="" />
+      <div class="icons">
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy Jeans</p>
+        <p>Campus Sutra Slim Fit Light Blue Knee Design Light Shade Denim Stretchable Jeans</p>
+        <p><span class="price">$15.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box shirt">
+      <img class="letest-img card-img-top" src="images/shirt-4.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy  Shirts</p>
+        <p>SANGAM Casual Shirt | Full Sleeves Formal Slim Fit Plain Office Shirts  |</p>
+        <p><span class="price">$12.99</span> <span class="checked">$20.88</span> <span>(215 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    
+    <div class="box jeans">
+      <img class="letest-img card-img-top" src="images/img-3.jpeg" alt="" />
+      <div class="icons">
+        <!-- <i class="fas fa-shopping-cart"></i> -->
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy Jeans</p>
+        <p>Campus Sutra Slim Fit Light Blue Knee Design Light Shade Denim Stretchable Jeans</p>
+        <p><span class="price">$15.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box shirt">
+      <img class="letest-img card-img-top" src="images/shirt-3.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy  Shirts</p>
+        <p>SANGAM Casual Shirt | Full Sleeves Formal Slim Fit Plain Office Shirts  |</p>
+        <p><span class="price">$12.99</span> <span class="checked">$20.88</span> <span>(215 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box jeans">
+      <img class="letest-img card-img-top" src="images/img-5.jpeg" alt="" />
+      <div class="icons">
+        <!-- <i class="fas fa-shopping-cart"></i> -->
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy Jeans</p>
+        <p>Campus Sutra Slim Fit Light Blue Knee Design Light Shade Denim Stretchable Jeans</p>
+        <p><span class="price">$15.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box t-shirt">
+      <img class="letest-img card-img-top" src="images/t-shirt-1.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy T-Shirts</p>
+        <p>EYEBOGLER Round Neck Full Sleeve Striped T Shirt for Women</p>
+        <p><span class="price">$10.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box jeans">
+      <img class="letest-img card-img-top" src="images/img-2.jpeg" alt="" />
+      <div class="icons">
+        <!-- <i class="fas fa-shopping-cart"></i> -->
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy Jeans</p>
+        <p>Campus Sutra Slim Fit Light Blue Knee Design Light Shade Denim Stretchable Jeans</p>
+        <p><span class="price">$15.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box t-shirt">
+      <img class="letest-img card-img-top" src="images/t-shirt-2.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy T-Shirts</p>
+        <p>EYEBOGLER Round Neck Full Sleeve Striped T Shirt for Men</p>
+        <p><span class="price">$10.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    
+    <div class="box t-shirt">
+      <img class="letest-img card-img-top" src="images/t-shirt-5.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy T-Shirts</p>
+        <p>EYEBOGLER Round Neck Full Sleeve Striped T Shirt </p>
+        <p><span class="price">$10.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box shirt">
+      <img class="letest-img card-img-top" src="images/shirt-1.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy  Shirts</p>
+        <p>SANGAM Casual Shirt | Full Sleeves Formal Slim Fit Plain Office Shirts  |</p>
+        <p><span class="price">$12.99</span> <span class="checked">$20.88</span> <span>(215 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box shirt">
+      <img class="letest-img card-img-top" src="images/shirt-2.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy  Shirts</p>
+        <p>SANGAM Casual Shirt | Full Sleeves Formal Slim Fit Plain Office Shirts  |</p>
+        <p><span class="price">$12.99</span> <span class="checked">$20.88</span> <span>(215 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box jeans">
+      <img class="letest-img card-img-top" src="images/img-4.jpeg" alt="" />
+      <div class="icons">
+        <!-- <i class="fas fa-shopping-cart"></i> -->
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy Jeans</p>
+        <p>Campus Sutra Slim Fit Light Blue Knee Design Light Shade Denim Stretchable Jeans</p>
+        <p><span class="price">$15.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box t-shirt">
+      <img class="letest-img card-img-top" src="images/t-shirt-3.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy T-Shirts</p>
+        <p>EYEBOGLER Round Neck Full Sleeve Striped T Shirt .</p>
+        <p><span class="price">$10.99</span> <span class="checked">$20.88</span> <span>(295 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    <div class="box shirt">
+      <img class="letest-img card-img-top" src="images/shirt-5.jpeg" alt="" />
+      <div class="icons">
+        
+        <i class="far fa-heart d-block heart_like"></i>
+      </div>
+      <div class="content">
+        <p class="product-name">Fancy  Shirts</p>
+        <p>SANGAM Casual Shirt | Full Sleeves Formal Slim Fit Plain Office Shirts  |</p>
+        <p><span class="price">$12.99</span> <span class="checked">$20.88</span> <span>(215 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+    
+    
+  </div>
+</section>
+<!-- Feature Section -->
+   <section class="feature-products">
+     <h2>Featured <span>Products</span></h2>
+     <div class="box-container">
+       <div class="box">
+         <div class="image-container">
+         <div class="small-img">
+           <img class="small-img-1" src="images/featured-img-1.jpeg" alt="" />
+           <img class="small-img-1" src="images/featured-img-2.jpeg" alt="" />
+            <img src="images/featured-img.jpeg" alt="" class="small-img-1" />
+            <img src="images/featured-img-3.jpeg" alt="" class="small-img-1" />
+         </div>
+           <div class="big-img">
+             <img src="images/featured-img.jpeg" alt="" class="big-image" />
+           </div>
+           
+         </div>
+         <div class="content">
+            <p class="product-name">New T-Shirts</p>
+        <p><span class="price">$14.99</span> <span class="checked">$19.88</span> <span>(215 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+         </div>
+       </div>
+       <div class="box">
+         <div class="image-container">
+         <div class="small-img">
+           <img class="small-img-2" src="images/featured-img-8.jpeg" alt="" />
+           <img class="small-img-2" src="images/featured-img-5.jpeg" alt="" />
+            <img src="images/featured-img-6.jpeg" alt="" class="small-img-2" />
+            <img src="images/featured-img-7.jpeg" alt="" class="small-img-2" />
+         </div>
+           <div class="big-img">
+             <img src="images/featured-img-8.jpeg" alt="" class="big-image-2" />
+           </div>
+           
+         </div>
+         <div class="content">
+            <p class="product-name">HighLander Jeans</p>
+        <p><span class="price">$18.99</span> <span class="checked">$21.88</span> <span>(285 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+         </div>
+       </div>
+       <div class="box">
+         <div class="image-container">
+         <div class="small-img">
+           <img class="small-img-3" src="images/featured-img-9.jpeg" alt="" />
+           <img class="small-img-3" src="images/featured-img-10.jpeg" alt="" />
+            <img src="images/featured-img-11.jpeg" alt="" class="small-img-3" />
+            <img src="images/featured-img-12.jpeg" alt="" class="small-img-3" />
+         </div>
+           <div class="big-img">
+             <img src="images/featured-img-10.jpeg" alt="" class="big-image-3" />
+           </div>
+         </div>
+         <div class="content">
+            <p class="product-name">White T-shirts</p>
+        <p><span class="price">$18.99</span> <span class="checked">$21.88</span> <span>(285 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+         </div>
+       </div>
+       <div class="box">
+         <div class="image-container">
+         <div class="small-img">
+           <img class="small-img-4" src="images/featured-shirt.jpg" alt="" />
+           <img class="small-img-4" src="images/featured-shirt-2.jpg" alt="" />
+            <img src="images/featured-shirt-1.jpg" alt="" class="small-img-4" />
+            <img src="images/featured-shirt-3.jpg" alt="" class="small-img-4" />
+         </div>
+           <div class="big-img">
+             <img src="images/featured-shirt-1.jpg" alt="" class="big-image-4" />
+           </div>
+         </div>
+         <div class="content">
+            <p class="product-name">Fancy Shirts</p>
+        <p><span class="price">$10.99</span> <span class="checked">$16.88</span> <span>(465 Reviews)</span></p>
+        
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <button type="submit">Add To Cart <i class="fas fa-shopping-cart"></i></button>
+         </div>
+       </div>
+     </div>
+   </section>
+
+<!-- Deal Of The Day Section -->
+<section class="deals" id="deal">
+  <h2 class="deal-heading">Deals Of The <span class="deal-child">Day</span></h2>
+   
+<div class="box-container">
+<div class="counter-container">
+   <h1 class="mt-3">Upto 50% Off.</h1>
+  <div class="counter">
+    <div class="count">
+      <h2 class="day">00</h2>
+      <span>Days</span>
+    </div>
+    <div class="count">
+      <h2 class="hour">00</h2>
+      <span>Hours</span>
+    </div>
+    <div class="count">
+      <h2 class="minute">00</h2>
+      <span>Minutes</span>
+    </div>
+    <div class="count">
+      <h2 class="second">00</h2>
+      <span>Seconds</span>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-outline-dark">Shop Now</button>
+  </div>
+  <div class="image">
+    <img src="images/women fashion.jpeg" alt="" />
+  
+  </div>
+</div>
+</section>
+
+<!-- Reviews Section Start -->
+<section class="reviews" id="review">
+  <h2>Our Satisfied <span>Customers</span></h2>
+  <div class="box-container">
+    <div class="box">
+      <img src="images/boy fashion.jpeg" alt="" />
+    <div class="content">
+      <h2>John Deo</h2>
+      <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      <p>Poducts Is So Good And Worth To Buy. I Had Buy Jeans Before 6 Months.Thier Service Cash On Delivery is Also Good.</p>
+      
+    </div>
+    </div>
+    <div class="box">
+      <img src="images/review-girl-1.jpeg" alt="" />
+    <div class="content">
+      <h2>Rousev</h2>
+      <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      <p>Poducts Is So Good And Worth To Buy. I Had Buy Jeans Before 6 Months.Thier Service Cash On Delivery is Also Good.</p>
+      
+    </div>
+    </div>
+    <div class="box">
+      <img src="images/review-girl.jpeg" alt="" />
+    <div class="content">
+      <h2>Kitty Das</h2>
+      <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      <p>Poducts Is So Good And Worth To Buy. I Had Buy T-Shirts Before 2 Months.Thier Service Cash On Delivery is Also Good.</p>
+      
+    </div>
+    </div>
+  </div>
+</section>
+<section class="newslater">
+  
+ <div class="container">
+  <h2>Sign Up For Newlaters</h2>
+  <p>Get Email Updates And Notification About Our New <span>Offers</span>.</p>
+  <div class="newslater-container">
+    <input type="email" placeholder="Enter Email">
+    <button class="btn btn-primary m-1">Sign Up</button>
+  </div> 
+ </div>
+  
+</section>
+
+<!-- Footer Section Start -->
+<section class="footer">
+  <div class="box-container">
+  <div class="variety">
+    <h5>Our Varietes</h5>
+    <p>Jeans</p>
+    <p>Shirts</p>
+    <p>T-Shirts</p>
+    <p>Jackets</p>
+  </div>  
+  <div class="social-accounts">
+    <h5>Our Social Media Handles</h5>
+    <p><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p>
+    <p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
+    <p><a href="#"><i class="fab fa-facebook"></i> Facebook</a></p>
+    <p><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></p>
+  </div>
+  <div class="contacts">
+    <h5>Contacts Us</h5>
+    <span>Our Address: </span>
+    <address>23 flore, sellicon valley , delhi</address>
+    <span class="d-block">Number: </spa>
+    <p>+91 9265163924</p>
+    <span class="d-block">Time</span>
+    <p>10:00 - 05:00 , Mon-Sat</p>
+  </div>
+  <div class="about">
+  <h5>About</h5>
+  <p>About US</p>
+  <p>Delivery Information</p>
+  <p>Our Terms and Conditions</p>
+  <p>Privacy And Policy</p>
+  <p>Contact Us</p>
+  </div>
+  <div class="payment">
+    <h5>Secured Payment Gateways</h5>
+    <i class="fab fa-cc-visa"></i>
+    <i class="fab fa-cc-mastercard"></i>
+    <i class="fab fa-cc-paypal"></i>
+    <i class="fab fa-cc-amazon-pay"></i>
+  </div>
+  </div>
+  <p class="credit">© 2022 Copyright   Design By Arvind</p>
+  <p class="credit"></p>
+  
+</section>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="Script.js"  charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+  $(".opt-jeans").click(function(){
+  $(".jeans").show(1000)
+  $(".t-shirt").hide(1000)
+  $(".shirt").hide(1000)
+  $(".opt-jeans").addClass("active");
+  $(".opt-T-Shirts").removeClass("active");
+  $(".opt-Shirts").removeClass("active");
+  $(".all").removeClass("active");
+});
+
+  $(".opt-T-Shirts").click(function(){
+  $(".jeans").hide(1000)
+  $(".t-shirt").show(1000)
+  $(".shirt").hide(1000)
+  $(".opt-jeans").removeClass("active");
+  $(".opt-T-Shirts").addClass("active");
+  $(".opt-Shirts").removeClass("active");
+  $(".all").removeClass("active");
+});
+  $(".opt-Shirts").click(function(){
+  $(".jeans").hide(1000)
+  $(".t-shirt").hide(1000)
+  $(".shirt").show(1000)
+  $(".opt-jeans").removeClass("active");
+  $(".opt-T-Shirts").removeClass("active");
+  $(".opt-Shirts").addClass("active");
+  $(".all").removeClass("active");
+});
+  $(".all").click(function(){
+  $(".jeans").show(1000)
+  $(".t-shirt").show(1000)
+  $(".shirt").show(1000)
+  $(".opt-jeans").removeClass("active");
+  $(".opt-T-Shirts").removeClass("active");
+  $(".opt-Shirts").removeClass("active");
+  $(".all").addClass("active");
+});
+
+
+
+document.querySelectorAll(".small-img-1").forEach(images =>{
+  images.onclick =()=>{
+    document.querySelector(".big-image").src= images.getAttribute('src');
+  }
+})
+
+
+document.querySelectorAll(".small-img-2").forEach(images =>{
+  images.onclick =()=>{
+    document.querySelector(".big-image-2").src= images.getAttribute('src');
+  }
+})
+document.querySelectorAll(".small-img-3").forEach(images =>{
+  images.onclick =()=>{
+    document.querySelector(".big-image-3").src= images.getAttribute('src');
+  }
+});
+document.querySelectorAll(".small-img-4").forEach(images =>{
+  images.onclick =()=>{
+    document.querySelector(".big-image-4").src= images.getAttribute('src');
+  }
+});
+
+
+
+// Deals Section
+const destination = new Date("aug 30,2022 00:00:00").getTime();
+setInterval(function(){
+  const now = new Date().getTime()
+  const distance = destination-now;
+    
+  const days = Math.floor(distance / (1000*60*60*24));
+  const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+  const minute = Math.floor((distance%(1000*60*60))/(1000*60))
+  const second = Math.floor(distance%(1000*60)/1000);
+  
+  document.querySelector(".day").innerText= days;
+  document.querySelector(".hour").innerText= hours;
+  document.querySelector(".minute").innerText= minute;
+  document.querySelector(".second").innerText= second;
+  
+},1000)
+
+
+
+
+</script>
+</body>
+</html>
